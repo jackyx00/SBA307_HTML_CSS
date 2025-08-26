@@ -1,0 +1,32 @@
+/* This CSS file is the main stylesheet for all html files */
+body {
+    background: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.inline {
+    display: inline;
+    font-weight: bold;
+    font-size: large;
+}
+
+.inline a {
+    color: lightcoral;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 50px;
+}
+
+.inline a:hover {
+    background-color: lightseagreen;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+}

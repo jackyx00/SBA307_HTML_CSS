@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Gotta Catch Them ALL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        hr {
+            background-color: black;
+            border: none;
+            height: 2px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the main homepage for user to navigate to different webpages
+    It also contains a summary of what is Pokemon and diffrent types of Pokemon-->
+    <h1>Pokémon</h1>
+    <ul style="list-style-type: none; background-color: transparent; padding: 14px 0px 14px 0px; text-align: center; border-top: 2px solid black; border-bottom: 2px solid black;">
+        <li class="inline"><a href="index.html">Home</a></li>
+        <li class="inline"><a href="Pokedex.html">Pokedex</a></li>
+        <li class="inline"><a href="Items.html">Items</a></li>
+    </ul>
+    <h3>Info</h3>
+    <p>Pokémon are mysterious creatures filled with many secrets. 
+        Some Pokémon live alongside humans and 
+        some live in the wild in grassy fields, caves, or the sea, 
+        but much about their ecology that remains unknown. 
+        One of their main features is that they can be caught 
+        using a Poké Ball, which allows them to be carried around.</p>
+    <hr>
+    <h3>How many different types of Pokémon are there?</h3>
+    <p>Just how many kinds of Pokémon exist? The exact number is unknown. 
+        While over 1000 kinds of Pokémon have been confirmed, 
+        as of yet unseen Pokémon will surely be discovered in the future. 
+        Pokémon are classified into 18 types based on their characteristics.</p>
+    <hr>
+    <h3>Pokémon Types</h3>
+    <p>All Pokémon creatures and their moves are assigned certain types. 
+        Each type has several strengths and weaknesses in both attack and defense. 
+        In battle, you should use Pokémon and moves that have a type advantage over your opponent; 
+        doing so will cause much more damage than normal.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Type Chart</th>
+                <th>Defense-></th>
+                <th>Normal</th>
+                <th>Fire</th>
+                <th>Water</th>
+                <th>Electric</th>
+                <th>Grass</th>
+                <th>Ice</th>
+                <th>Fighting</th>
+                <th>Poison</th>
+                <th>Ground</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Attack↓</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Normal</th>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <b>Chose your favorite Pokémon type:</b>
+    <form>
+        <input type="radio" id="normal" name="fav_type" value="Normal">
+        <label for="normal">Normal</label><br>
+        <input type="radio" id="fire" name="fav_type" value="Fire">
+        <label for="fire">Fire</label><br>
+    </form>
+    <img src="./img/Pikachu.gif" alt="Pikachu">
+</body>
+</html>
