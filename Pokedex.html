@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <style>
+      .pokémon {
+        width: 200px;
+        height: 200px;
+        transition: 2s;
+      }
+      
+      .pokémon:hover {
+        width: 300px;
+        height: 300px;
+      }
+
+      .container {
+        margin-top: 50px;
+        display: flex;
+        width: auto;
+        justify-content: space-around;
+      }
+
+      #evolutions {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .arrow-right {
+        margin: 100px;
+        width: 50px;
+        height: 10px;
+        background-color: black;
+      }
+
+      .arrow-right::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 10px;
+        background-color: black;
+        position: relative;
+        top: -11px;
+        right: -17px;
+        transform: rotate(45deg);
+      }
+
+      .arrow-right::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 10px;
+        background-color:black;
+        position: relative;
+        right: -17px;
+        transform: rotate(-45deg);
+      }
+
+      .pikachu {
+        transition: width 2s;
+      }
+
+      .pikachu:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
     <!-- This html file contains some pokemons for user -->
     <h1>All Pokemons</h1>
-    <nav style="list-style-type: none; background-color: transparent; padding: 14px 0px 14px 0px; text-align: center; border-top: 2px solid black; border-bottom: 2px solid black;">
-        <a class="inline" href="index.html">Home</a> |
-        <a class="inline" href="Pokedex.html">Pokedex</a> |
-        <a class="inline" href="Items.html">Items</a>
+    <nav
+      style="
+        list-style-type: none;
+        background-color: transparent;
+        padding: 14px 0px 14px 0px;
+        text-align: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      "
+    >
+      <a class="inline" href="index.html">Home</a> |
+      <a class="inline" href="Pokedex.html">Pokedex</a> |
+      <a class="inline" href="Items.html">Items</a>
     </nav>
-</body>
+    <div class="container">
+      <div id="evolutions">
+        <img class="pokémon" src="./img/Bulbasaur.png" alt="Bulbasaur" />
+        <div class="arrow-right"></div>
+        <img class="pokémon" src="./img/Ivysaur.png" alt="Ivysaur" />
+        <div class="arrow-right"></div>
+        <img class="pokémon" src="./img/Venusaur.png" alt="Venusaur" />
+      </div>
+    </div>
+    <hr>
+    <b>Chose your favorite Pokémon:</b>
+    <form>
+        <input type="radio" id="bulbasaur" name="fav_pokémon" value="Bulbasaur">
+        <label for="bulbasaur">Bulbasaur</label><br>
+        <input type="radio" id="ivysaur" name="fav_pokémon" value="Ivysaur">
+        <label for="ivysaur">Ivysaur</label><br>
+        <input type="radio" id="venusaur" name="fav_pokémon" value="Venusaur">
+        <label for="venusaur">Venusaur</label><br>
+    </form>
+    <img class="pikachu" src="./img/Pikachu.gif" alt="Pikachu">
+  </body>
 </html>

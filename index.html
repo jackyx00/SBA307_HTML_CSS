@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Gotta Catch Them ALL</title>
+    <title>Pokémon Gotta Catch 'em ALL</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        img {
-            display: block;
-            margin: auto;
-            width: 10%;
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            transition: width 2s, font-size 2s, transform 2s;
+        }
+        #inside:hover {
+            width: 300px;
+            font-size: larger;
+            font-weight: bold;
+            background: lightblue;
+            transform: rotate(360deg);
         }
     </style>
 </head>
@@ -22,6 +38,11 @@
         <a class="inline" href="Pokedex.html">Pokedex</a> |
         <a class="inline" href="Items.html">Items</a>
     </nav>
+    <br>
+    <div id="container">
+        <div id="inside">Gotta Catch 'em ALL</div>
+    </div>
+    <hr>
     <h3>Info</h3>
     <p>Pokémon are mysterious creatures filled with many secrets. 
         Some Pokémon live alongside humans and 
@@ -76,6 +97,12 @@
         <input type="radio" id="fire" name="fav_type" value="Fire">
         <label for="fire">Fire</label><br>
     </form>
-    <img src="./img/Pikachu.gif" alt="Pikachu">
+    <hr>
+    <label for="Pokémon">Do you love Pokémon?</label>
+    <select name="Pokémon" id="Pokémon">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <img class="pikachu" src="./img/Pikachu.gif" alt="Pikachu">
 </body>
 </html>
